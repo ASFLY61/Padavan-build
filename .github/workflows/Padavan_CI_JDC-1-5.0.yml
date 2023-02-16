@@ -1,8 +1,8 @@
 # # # # # # # # # # #
-#  自动构建K2P 
+#   JDC:MT7615 5.0.4.0
 #      
 # # # # # # # # # # #
-name: Padavan CI MI-MINI
+name: Padavan CI JDC-1-5.0
 on:
   schedule:
     - cron: '0 18 * * *'
@@ -16,20 +16,20 @@ on:
   watch:
     types: [started]
 env:
-  T_NAMES: "MI-MINI"        # 设备名字数组
+  T_NAMES: "JDC-1-5.0"        # 设备名字数组
   BASE_PATH: padavan                # 基础目录
   PUBLIC_PATH: public               # 公共目录
   VERSION_FILE: versions.inc        # 版本后缀
   PUBLIC_SH: public.sh              # 公共命令
   THEME_PATH: theme
   UPLOAD_FIRMWARE: true             # 是否打包文件
-  CLONE_URL: https://github.com/immortalwrt/padavan.git     # padavan  地址
+  CLONE_URL: https://github.com/immortalwrt/padavan.git    # padavan  地址
   CLONE_BRANCH: master              # padavan 分支
   WORK_PATH: /opt/rt-n56u           # 工作目录 一定要加 /
   UPLOAD_COWTRANSFER: false
   UPLOAD_WETRANSFER: true
-  FILE_NAME: "MI-MINI"       
-  IMAGES_PATH: /opt/rt-n56u/images/    
+  FILE_NAME: "JDC-1-5.0"      
+  IMAGES_PATH: /opt/rt-n56u/images/  
 jobs:
   build:
     runs-on: ubuntu-18.04

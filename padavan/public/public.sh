@@ -22,8 +22,6 @@ default_theme_path="${DESTDIR}/trunk/user/www/n56u_ribbon_fixed"
 	sudo rm -rf $default_theme_path/images
 	cp -rf ../public/theme/. $default_theme_path
 	echo "--------------复制主题文件结束------------------"
- 
- 
 
 #   echo "--------------开始复制中文SSID支持文件----------"
  # trunk/user/httpd/aspbw.c
